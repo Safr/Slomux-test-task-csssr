@@ -23,7 +23,6 @@ const connect = (mapStateToProps, mapDispatchToProps) =>
   Component => {
     return class extends React.Component {
       render() {
-        console.log('anonym class', this.props);
         return (
           // <Component
           //   {...mapStateToProps(store.getState(), this.props)}
