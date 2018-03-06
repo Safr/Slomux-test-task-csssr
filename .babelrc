@@ -1,0 +1,37 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "flow"
+  ],
+  "retainLines": true,
+  "env": {
+    "targets": {
+      "browsers": "last 2 versions"
+    },
+    "loose": true,
+    "modules": false,
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    },
+    "production": {
+      "presets": ["react-optimize"],
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        "transform-react-pure-class-to-function",
+        "transform-react-remove-prop-types"
+      ]
+    }
+  },
+  "plugins": [
+    "dynamic-import-webpack",
+    "syntax-dynamic-import",
+    "transform-react-jsx-source",
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread"
+  ]
+}
