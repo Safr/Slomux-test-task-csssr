@@ -42,7 +42,6 @@ build/Release
 # Project Files
 public
 build
-dist
 docs
 *.map
 .eslintcache
